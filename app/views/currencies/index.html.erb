@@ -5,17 +5,20 @@
 <table class="main-table">
   <thead class="table-header">
     <tr class="table-row">
-      <th>Team market percent</th>
-      <th>Ico date</th>
+      <!-- <th>Team market percent</th> -->
+      <th>Name</th>
+      <!-- <th>Ico date</th>
+      <th>Whitepaper</th>
+      <th>Coins issued</th>
       <th>Vertical</th>
-      <th>Team</th>
-      <th>Team rating</th>
-      <th>Needs blockchain</th>
-      <th>Countries ico available</th>
-      <th>Scam sale probability</th>
-      <th>Smart money investors</th>
+      <th>Team</th> -->
+      <th>Score</th>
+      <!-- <th>Needs blockchain</th> -->
+      <!-- <th>Countries ico available</th>
+      <th>Scam sale probability</th> -->
+      <!-- <th>Smart money investors</th>
       <th>Mining difficulty</th>
-      <th>Arbitrage activity</th>
+      <th>Arbitrage activity</th> -->
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -23,17 +26,20 @@
   <tbody class="table-body">
     <% @currencies.each do |currency| %>
       <tr class="table-row">
-        <td><%= currency.team_market_percent %></td>
-        <td><%= currency.ico_date %></td>
+        <!-- <td><%= currency.team_market_percent %></td> -->
+        <td><%= currency.name %></td>
+        <!-- <td><%= currency.ico_date %></td>
+        <td><%= currency.link_to_wp %></td>
+        <td><%= currency.coins_issued %></td>
         <td><%= currency.vertical %></td>
-        <td><%= currency.team %></td>
+        <td><%= currency.team %></td> -->
         <td><%= currency.team_rating %></td>
-        <td><%= currency.needs_blockchain %></td>
-        <td><%= currency.countries_ico_available %></td>
-        <td><%= currency.scam_sale_probability %></td>
-        <td><%= currency.smart_money_investors %></td>
+        <!-- <td><%= currency.needs_blockchain %></td> -->
+        <!-- <td><%= currency.countries_ico_available %></td>
+        <td><%= currency.scam_sale_probability %></td> -->
+        <!-- <td><%= currency.smart_money_investors %></td>
         <td><%= currency.mining_difficulty %></td>
-        <td><%= currency.arbitrage_activity %></td>
+        <td><%= currency.arbitrage_activity %></td> -->
         <td><%= link_to 'Show', currency %></td>
         <td><%= link_to 'Edit', edit_currency_path(currency) %></td>
         <td><%= link_to 'Destroy', currency, method: :delete, data: { confirm: 'Are you sure?' } %></td>
@@ -44,4 +50,6 @@
 
 <br>
 
-<%= link_to 'New Currency', new_currency_path %>
+<div class="new-currency">
+    <%= link_to 'New Currency', new_currency_path %>
+</div>

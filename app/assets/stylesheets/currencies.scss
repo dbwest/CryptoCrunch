@@ -8,7 +8,8 @@
 }
 
 .main-table {
-    
+    width: 90%;
+    margin: 0 auto;
 }
 
 .table-header {
@@ -16,11 +17,35 @@
 }
 
 .table-row {
-    border-left: 1px solid #ecedee;
+    /* border-left: 1px solid #ecedee; */
 }
 
 .table-row {
     th {
-        border: 1px solid #ecedee;
+        /* border: 1px solid #ecedee; */
+        /* font-weight: normal; */
+        /* font-size: 12px; */
+        /* font-weight: normal; */
+        font-size: 12px;
+        text-align: center;
+        height: 24px;
+        line-height: 24px;
     }
 }
+
+.new-currency {
+    margin-left: 5%;
+    /* height: 24px; */
+    /* line-height: 24px; */
+    padding: 0 4px;
+    display: flex;
+    a {
+        color: orange;
+        border: 1px solid orange;
+        border-radius: 5px;
+        height: 32px;
+        padding: 0 10px;
+        line-height: 32px;
+    }
+}
+
