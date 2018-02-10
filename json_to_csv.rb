@@ -2,11 +2,13 @@ require 'rest-client'
 require 'json'
 require 'csv'
 
-url = 'https://api.coinmarketcap.com/v1/ticker/?limit=10'
+coinmarket_base_url = 'https://api.coinmarketcap.com/v1/'
+entries = 10
+ticker_url = coinmarket_base_url + "/ticker/?limit=#{entries}"
 
 csv = CSV.generate do |csv|
-  csv << JSON.parse(RestClient.get(url)).first.keys
-  JSON.parse(RestClient.get(url)).each {|hash| csv << hash.values}
+  csv << JSON.parse(RestClient.get(ticker_url)).first.keys
+  JSON.parse(RestClient.get(ticker_url)).each {|hash| csv << hash.values}
 end
 
 File.write('json_to_csv_out.csv',csv)
