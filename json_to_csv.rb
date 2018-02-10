@@ -9,4 +9,4 @@ csv = CSV.generate do |csv|
   JSON.parse(RestClient.get(url)).each {|hash| csv << hash.values}
 end
 
-File.write('my.csv',csv)
+File.write('json_to_csv_out.csv',csv)
