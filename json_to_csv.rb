@@ -3,7 +3,8 @@ require 'json'
 require 'csv'
 
 coinmarket_base_url = 'https://api.coinmarketcap.com/v1/'
-entries = 10
+entries = 20
+
 ticker_url = coinmarket_base_url + "/ticker/?limit=#{entries}"
 
 csv = CSV.generate do |csv|
