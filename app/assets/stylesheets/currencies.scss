@@ -4,6 +4,7 @@
 .main-header {
     font-size: 22px;
     color: orange;
+    text-align: center;
 }
 
 .main-table {
@@ -17,6 +18,14 @@
 
 .table-row {
     /* border-left: 1px solid #ecedee; */
+    td {
+        height: 32px;
+        line-height: 32px;
+        &.score {
+            width: 72px;
+            font-size: 18px;
+        }
+    }
 }
 
 .table-row {
@@ -26,7 +35,7 @@
         /* font-size: 12px; */
         /* font-weight: normal; */
         font-size: 12px;
-        text-align: center;
+        /* text-align: center; */
         height: 24px;
         line-height: 24px;
     }
