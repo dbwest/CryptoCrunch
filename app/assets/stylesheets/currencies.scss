@@ -2,6 +2,25 @@
 // They will automatically be included in application.scss.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 .main-header {
-    font-size: 28px;
+    font-size: 22px;
     color: orange;
+    text-align: center;
+}
+
+.main-table {
+    
+}
+
+.table-header {
+    
+}
+
+.table-row {
+    border-left: 1px solid #ecedee;
+}
+
+.table-row {
+    th {
+        border: 1px solid #ecedee;
+    }
 }

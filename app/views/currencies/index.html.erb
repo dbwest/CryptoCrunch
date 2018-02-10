@@ -2,9 +2,9 @@
 
 <h1 class="main-header">Crypto Crunch</h1>
 
-<table>
-  <thead>
-    <tr>
+<table class="main-table">
+  <thead class="table-header">
+    <tr class="table-row">
       <th>Team market percent</th>
       <th>Ico date</th>
       <th>Vertical</th>
@@ -20,9 +20,9 @@
     </tr>
   </thead>
 
-  <tbody>
+  <tbody class="table-body">
     <% @currencies.each do |currency| %>
-      <tr>
+      <tr class="table-row">
         <td><%= currency.team_market_percent %></td>
         <td><%= currency.ico_date %></td>
         <td><%= currency.vertical %></td>

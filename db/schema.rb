@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180210184450) do
+ActiveRecord::Schema.define(version: 20180210200613) do
 
   create_table "currencies", force: :cascade do |t|
     t.decimal "team_market_percent"
@@ -26,6 +26,13 @@ ActiveRecord::Schema.define(version: 20180210184450) do
     t.integer "arbitrage_activity"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "name"
+    t.string "json_data"
+    t.string "link_to_wp"
+    t.string "number_of_coins_issued"
+    t.string "coin_release_date"
+    t.string "whitepaper_link"
+    t.string "coins_issued"
   end
 
 end
