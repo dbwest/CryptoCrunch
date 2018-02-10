@@ -1,0 +1,72 @@
+<%= form_with(model: currency, local: true) do |form| %>
+  <% if currency.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(currency.errors.count, "error") %> prohibited this currency from being saved:</h2>
+
+      <ul>
+      <% currency.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :team_market_percent %>
+    <%= form.text_field :team_market_percent, id: :currency_team_market_percent %>
+  </div>
+
+  <div class="field">
+    <%= form.label :ico_date %>
+    <%= form.date_select :ico_date, id: :currency_ico_date %>
+  </div>
+
+  <div class="field">
+    <%= form.label :vertical %>
+    <%= form.text_field :vertical, id: :currency_vertical %>
+  </div>
+
+  <div class="field">
+    <%= form.label :team %>
+    <%= form.text_field :team, id: :currency_team %>
+  </div>
+
+  <div class="field">
+    <%= form.label :team_rating %>
+    <%= form.number_field :team_rating, id: :currency_team_rating %>
+  </div>
+
+  <div class="field">
+    <%= form.label :needs_blockchain %>
+    <%= form.check_box :needs_blockchain, id: :currency_needs_blockchain %>
+  </div>
+
+  <div class="field">
+    <%= form.label :countries_ico_available %>
+    <%= form.text_field :countries_ico_available, id: :currency_countries_ico_available %>
+  </div>
+
+  <div class="field">
+    <%= form.label :scam_sale_probability %>
+    <%= form.text_field :scam_sale_probability, id: :currency_scam_sale_probability %>
+  </div>
+
+  <div class="field">
+    <%= form.label :smart_money_investors %>
+    <%= form.text_field :smart_money_investors, id: :currency_smart_money_investors %>
+  </div>
+
+  <div class="field">
+    <%= form.label :mining_difficulty %>
+    <%= form.number_field :mining_difficulty, id: :currency_mining_difficulty %>
+  </div>
+
+  <div class="field">
+    <%= form.label :arbitrage_activity %>
+    <%= form.number_field :arbitrage_activity, id: :currency_arbitrage_activity %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

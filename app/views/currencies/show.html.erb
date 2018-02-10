@@ -1,0 +1,59 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Team market percent:</strong>
+  <%= @currency.team_market_percent %>
+</p>
+
+<p>
+  <strong>Ico date:</strong>
+  <%= @currency.ico_date %>
+</p>
+
+<p>
+  <strong>Vertical:</strong>
+  <%= @currency.vertical %>
+</p>
+
+<p>
+  <strong>Team:</strong>
+  <%= @currency.team %>
+</p>
+
+<p>
+  <strong>Team rating:</strong>
+  <%= @currency.team_rating %>
+</p>
+
+<p>
+  <strong>Needs blockchain:</strong>
+  <%= @currency.needs_blockchain %>
+</p>
+
+<p>
+  <strong>Countries ico available:</strong>
+  <%= @currency.countries_ico_available %>
+</p>
+
+<p>
+  <strong>Scam sale probability:</strong>
+  <%= @currency.scam_sale_probability %>
+</p>
+
+<p>
+  <strong>Smart money investors:</strong>
+  <%= @currency.smart_money_investors %>
+</p>
+
+<p>
+  <strong>Mining difficulty:</strong>
+  <%= @currency.mining_difficulty %>
+</p>
+
+<p>
+  <strong>Arbitrage activity:</strong>
+  <%= @currency.arbitrage_activity %>
+</p>
+
+<%= link_to 'Edit', edit_currency_path(@currency) %> |
+<%= link_to 'Back', currencies_path %>

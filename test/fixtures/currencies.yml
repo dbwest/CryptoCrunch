@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  team_market_percent: 9.99
+  ico_date: 2018-02-10
+  vertical: MyString
+  team: MyString
+  team_rating: 1
+  needs_blockchain: false
+  countries_ico_available: MyString
+  scam_sale_probability: 9.99
+  smart_money_investors: MyString
+  mining_difficulty: 1
+  arbitrage_activity: 1
+
+two:
+  team_market_percent: 9.99
+  ico_date: 2018-02-10
+  vertical: MyString
+  team: MyString
+  team_rating: 1
+  needs_blockchain: false
+  countries_ico_available: MyString
+  scam_sale_probability: 9.99
+  smart_money_investors: MyString
+  mining_difficulty: 1
+  arbitrage_activity: 1
