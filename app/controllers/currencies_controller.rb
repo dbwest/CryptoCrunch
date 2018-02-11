@@ -5,6 +5,9 @@ class CurrenciesController < ApplicationController
   # GET /currencies.json
   def index
     @currencies = Currency.all
+
+    # json_response(@currencies)
+    render json: @currencies, status: status
   end
 
   # GET /currencies/1
