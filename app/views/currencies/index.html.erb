@@ -1,3 +1,4 @@
+<%= stylesheet_link_tag "reset" %>
 <p id="notice"><%= notice %></p>
 
 <h1 class="main-header">Crypto Crunch</h1>
@@ -13,7 +14,7 @@
       <th>Vertical</th>
       <th>Team</th> -->
       <th>Score</th>
-      <th>Link</th>
+      <!-- <th>Link</th> -->
       <!-- <th>Needs blockchain</th> -->
       <!-- <th>Countries ico available</th>
       <th>Scam sale probability</th> -->
@@ -28,14 +29,15 @@
     <% @currencies.each do |currency| %>
       <tr class="table-row">
         <!-- <td><%= currency.team_market_percent %></td> -->
-        <td><%= currency.name %></td>
+        <!-- <td><%= currency.name %></td> -->
+        <td><%= link_to  currency.name, currency.link_to_wp %></td>
         <!-- <td><%= currency.ico_date %></td>
         <td><%= currency.link_to_wp %></td>
         <td><%= currency.coins_issued %></td>
         <td><%= currency.vertical %></td>
         <td><%= currency.team %></td> -->
         <td class="score" ><%= currency.team_rating %></td>
-        <td><%= currency.link_to_wp %></td>
+        <!-- <td><%= link_to 'New Currency', currency.link_to_wp %></td> -->
         
         <!-- <td><%= currency.needs_blockchain %></td> -->
         <!-- <td><%= currency.countries_ico_available %></td>
