@@ -3,10 +3,9 @@ require 'json'
 require 'csv'
 
 coinmarket_base_url = 'https://api.coinmarketcap.com/v1/'
-entries = 20
+entries = 0
 
-#ticker_url = coinmarket_base_url + "/ticker/?limit=#{entries}"
-ticker_url = coinmarket_base_url + "/ticker/"
+ticker_url = coinmarket_base_url + "/ticker/?limit=#{entries}"
 
 csv = CSV.generate do |csv|
   csv << JSON.parse(RestClient.get(ticker_url)).first.keys
