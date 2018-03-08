@@ -1,0 +1,21 @@
+resources:
+  - name: rails-src
+    type: git
+    source:
+      uri: https://github.com/dbwest/CryptoCrunch.git
+      branch: master
+jobs:
+- name: bundle
+  
+  plan:
+  - get: rails-src
+  - task: bundle
+    config:
+      inputs:
+      - name: rails-src
+      platform: linux
+      image_resource:
+        type: docker-image
+        source: {repository: ruby, tag: alpine}
+      run:
+        path: ./rails-src/ci/concourse-bundle.sh
