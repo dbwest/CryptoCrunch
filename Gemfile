@@ -33,13 +33,13 @@ gem 'jbuilder', '~> 2.5'
 # gem 'capistrano-rails', group: :development
 
 gem 'rest-client'
-gem 'bootstrap-sass', '~> 3.3.7'
+gem 'bootstrap-sass', '~> 3.4.0'
 
 #react stuff
 gem 'react-rails'
 gem 'webpacker'
 
-gem 'jquery-rails'
+gem 'jquery-rails', '>= 4.3.4'
 
 gem 'faker'
 
